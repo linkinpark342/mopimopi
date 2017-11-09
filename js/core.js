@@ -473,7 +473,7 @@ function Person(e, p) {
             this.role = "Healer";
             this.petType = "Fairy"
         }
-        if (this.name.indexOf("자동포탑") > -1 || this.name.toUpperCase().indexOf("AUTOTURRET") > -1 || this.name.indexOf("オートタレット") > -1 || this.name.toLowerCase().indexOf("selbstschuss-gyrocopter") > -1 || this.name.toLowerCase().indexOf("auto-tourelle")) {
+        if (this.name.indexOf("자동포탑") > -1 || this.name.toUpperCase().indexOf("AUTOTURRET") > -1 || this.name.indexOf("オートタレット") > -1 || this.name.toLowerCase().indexOf("selbstschuss-gyrocopter") > -1 || this.name.toLowerCase().indexOf("auto-tourelle") > -1) {
             this.Job = "AVA";
             this.Class = "MCH";
             this.isPet = true;
