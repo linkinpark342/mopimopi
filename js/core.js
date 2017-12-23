@@ -460,7 +460,7 @@ function Person(e, p) {
         }
     }
     if (this.Class == "") {
-        if (this.name.indexOf("에기") > -1 || this.name.indexOf("카벙클") > -1 || this.name.toUpperCase().indexOf("EGI") > -1 || this.name.toUpperCase().indexOf("CARBUNCLE") > -1 || this.name.indexOf("エギ") > -1 || this.name.indexOf("カーバンクル") > -1) {
+        if (this.name.indexOf("데미바하무트") > -1 || this.name.indexOf("에기") > -1 || this.name.indexOf("카벙클") > -1 || this.name.toUpperCase().indexOf("EGI") > -1 || this.name.toUpperCase().indexOf("CARBUNCLE") > -1 || this.name.indexOf("エギ") > -1 || this.name.indexOf("カーバンクル") > -1) {
             this.Job = "AVA";
             this.Class = "SMN";
             this.isPet = true;
