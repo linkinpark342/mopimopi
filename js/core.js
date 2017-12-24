@@ -366,24 +366,6 @@ function Person(e, p) {
                 this[i] = parseInt(tmp).nanFix()
         }
     }
-    try {
-        this.maxhitstr = this.maxhit.split('-')[0];
-        this.maxhitval = parseInt(this.maxhit.split('-')[1].replace(/\D/g, ""))        
-        if(this.maxhitstr == "Unknown" && this.Job == "MCH" && localStorage.getItem("lang") == "kr")        
-            this.maxhitstr = "급속 출력"
-    } catch (ex) {
-        this.maxhit = "?-0";
-        this.maxhitstr = "";
-        this.maxhitval = 0
-    }
-    try {
-        this.maxhealstr = this.maxheal.split('-')[0];
-        this.maxhealval = parseInt(this.maxheal.split('-')[1].replace(/\D/g, ""))
-    } catch (ex) {
-        this.maxheal = "?-0";
-        this.maxhealstr = "";
-        this.maxhealval = 0
-    }
     if (this.DURATION <= 0) {
         this.dps = parseFloat((this.damage / this.parent.DURATION).nanFix().toFixed(underDot));
         this.hps = parseFloat((this.healed / this.parent.DURATION).nanFix().toFixed(underDot));
@@ -462,7 +444,7 @@ function Person(e, p) {
         }
     }
     if (this.Class == "") {
-        if (this.name.toUpperCase().indexOf("DEMI-BAHAMUT") > -1 || this.name.indexOf("데미바하무트") > -1 || this.name.indexOf("에기") > -1 || this.name.indexOf("카벙클") > -1 || this.name.toUpperCase().indexOf("EGI") > -1 || this.name.toUpperCase().indexOf("CARBUNCLE") > -1 || this.name.indexOf("エギ") > -1 || this.name.indexOf("カーバンクル") > -1) {
+        if (this.name.indexOf("에기") > -1 || this.name.indexOf("카벙클") > -1 || this.name.toUpperCase().indexOf("EGI") > -1 || this.name.toUpperCase().indexOf("DEMI-BAHAMUT") > -1 || this.name.toUpperCase().indexOf("CARBUNCLE") > -1 || this.name.indexOf("エギ") > -1 || this.name.indexOf("カーバンクル") > -1) {
             this.Job = "AVA";
             this.Class = "SMN";
             this.isPet = true;
@@ -485,6 +467,24 @@ function Person(e, p) {
             this.Job = "LMB";
             this.Class = "LMB"
         }
+    }
+    try {
+        this.maxhitstr = this.maxhit.split('-')[0];
+        this.maxhitval = parseInt(this.maxhit.split('-')[1].replace(/\D/g, ""))
+        if(this.maxhitstr == "Unknown" && this.Class == "MCH" && localStorage.getItem("lang") == "kr")     
+            this.maxhitstr = "급속 출력"
+    } catch (ex) {
+        this.maxhit = "?-0";
+        this.maxhitstr = "";
+        this.maxhitval = 0
+    }
+    try {
+        this.maxhealstr = this.maxheal.split('-')[0];
+        this.maxhealval = parseInt(this.maxheal.split('-')[1].replace(/\D/g, ""))
+    } catch (ex) {
+        this.maxheal = "?-0";
+        this.maxhealstr = "";
+        this.maxhealval = 0
     }
     this.visible = !0;
     this.original = {
