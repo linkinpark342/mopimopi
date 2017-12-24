@@ -368,7 +368,9 @@ function Person(e, p) {
     }
     try {
         this.maxhitstr = this.maxhit.split('-')[0];
-        this.maxhitval = parseInt(this.maxhit.split('-')[1].replace(/\D/g, ""))
+        this.maxhitval = parseInt(this.maxhit.split('-')[1].replace(/\D/g, ""))        
+        if(this.maxhitstr == "Unknown" && this.Job == "MCH" && localStorage.getItem("lang") == "kr")        
+            this.maxhitstr = "급속 출력"
     } catch (ex) {
         this.maxhit = "?-0";
         this.maxhitstr = "";
