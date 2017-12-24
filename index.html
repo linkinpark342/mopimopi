@@ -69,6 +69,63 @@
                     <label for="lb-en" class="rdColor"><font style="color:#fff">English</font></label>
                 </li>
             </ul>
+            <!-- Unit Type 1 -->
+            <ul id="dropdown3" class="dropdown-content grey darken-3">
+                <ul class="white-text">
+                    <div class="left">DPS, HPS</div>
+                    <div class="right" style="cursor: pointer; -webkit-tap-highlight-color:transparent;"><i class="material-icons">clear</i></div>
+                </ul>
+                <li id="1r" onclick="radioButtonCotrol(this.id)">
+                    <input type="radio" class="with-gap" name="radio_unit1" id="lb-1r" />
+                    <label for="lb-1r" class="rdColor"><font style="color:#fff" name="m273"></font></label>
+                </li>
+                <li id="1k" onclick="radioButtonCotrol(this.id)">
+                    <input type="radio" class="with-gap" name="radio_unit1" id="lb-1k" />
+                    <label for="lb-1k" class="rdColor"><font style="color:#fff" name="m274"></font></label>
+                </li>
+                <li id="1m" onclick="radioButtonCotrol(this.id)">
+                    <input type="radio" class="with-gap" name="radio_unit1" id="lb-1m" />
+                    <label for="lb-1m" class="rdColor"><font style="color:#fff" name="m275"></font></label>
+                </li>
+            </ul>    
+            <!-- Unit Type 2 -->
+            <ul id="dropdown4" class="dropdown-content grey darken-3">
+                <ul class="white-text">
+                    <div class="left" name="m272"></div>
+                    <div class="right" style="cursor: pointer; -webkit-tap-highlight-color:transparent;"><i class="material-icons">clear</i></div>
+                </ul>
+                <li id="2r" onclick="radioButtonCotrol(this.id)">
+                    <input type="radio" class="with-gap" name="radio_unit2" id="lb-2r" />
+                    <label for="lb-2r" class="rdColor"><font style="color:#fff" name="m273"></font></label>
+                </li>
+                <li id="2k" onclick="radioButtonCotrol(this.id)">
+                    <input type="radio" class="with-gap" name="radio_unit2" id="lb-2k" />
+                    <label for="lb-2k" class="rdColor"><font style="color:#fff" name="m274"></font></label>
+                </li>
+                <li id="2m" onclick="radioButtonCotrol(this.id)">
+                    <input type="radio" class="with-gap" name="radio_unit2" id="lb-2m" />
+                    <label for="lb-2m" class="rdColor"><font style="color:#fff" name="m275"></font></label>
+                </li>
+            </ul> 
+            <!-- Unit Type 3 -->
+            <ul id="dropdown5" class="dropdown-content grey darken-3">
+                <ul class="white-text">
+                    <div class="left">MaxHit, MaxHeal</div>
+                    <div class="right" style="cursor: pointer; -webkit-tap-highlight-color:transparent;"><i class="material-icons">clear</i></div>
+                </ul>
+                <li id="3r" onclick="radioButtonCotrol(this.id)">
+                    <input type="radio" class="with-gap" name="radio_unit3" id="lb-3r" />
+                    <label for="lb-3r" class="rdColor"><font style="color:#fff" name="m273"></font></label>
+                </li>
+                <li id="3k" onclick="radioButtonCotrol(this.id)">
+                    <input type="radio" class="with-gap" name="radio_unit3" id="lb-3k" />
+                    <label for="lb-3k" class="rdColor"><font style="color:#fff" name="m274"></font></label>
+                </li>
+                <li id="3m" onclick="radioButtonCotrol(this.id)">
+                    <input type="radio" class="with-gap" name="radio_unit3" id="lb-3m" />
+                    <label for="lb-3m" class="rdColor"><font style="color:#fff" name="m275"></font></label>
+                </li>
+            </ul>                                 
             <!-- Name Type -->
             <ul id="dropdown7" class="dropdown-content grey darken-3">
                 <ul class="white-text">
@@ -358,7 +415,6 @@
                         Sorry for the trouble. 
                     </p>   
                 </div>
-                -->
                 <div class="row col s12 card-panel">
                     <span class="new badge green">Update</span>
                     <p class="grey1-text" lang="kr">
@@ -368,16 +424,18 @@
                         1. [Inven/<a href="http://www.inven.co.kr/member/inventory/view_inventory.php?nick=%EC%95%99%EB%A3%A1" target="_blank">앙룡</a>] Add an option : <span class="amber-text">MaxHit/Heal Format Align</span> (Settings > Data Processing)<br>
                     </p>
                 </div>
+                -->
                 <div class="col s12 card-panel">
                     <span class="new badge red">Bugfix</span>
                     <p class="grey1-text" lang="kr">
-                        1. [Inven/<a href="http://www.inven.co.kr/member/inventory/view_inventory.php?nick=%EC%95%99%EB%A3%A1" target="_blank">앙룡</a>] 구분선 표기 오류
+                        1. 소환사 데미바하무트가 합산 시 출력되던 버그 처리 <br>
+                        2. 기공사 급속 출력 스킬명 수정
                     </p>
                     <p class="grey1-text" lang="en">
-                        1. [Inven/<a href="http://www.inven.co.kr/member/inventory/view_inventory.php?nick=%EC%95%99%EB%A3%A1" target="_blank">앙룡</a>] A clerical error of Division Lines
+                        1. A clerical error of Demi-Bahamut
                     </p>       
                 </div>
-                <span class="white-text right" id="verDate">1.1.9.2 - 2017/11/24</span>
+                <span class="white-text right" id="verDate">1.1.9.4 - 2017/12/24</span>
             </div>
             <!-- Main Contents -->
             <div name="main" id="wrap">
@@ -404,7 +462,6 @@
                 <ul id="dpsRaidTable" class="collapsible raid"></ul>
                 <ul id="hpsRaidTable" class="collapsible raid hidden"></ul>
             </div>
-
             <!-- Mobile Scroll Lock-->
             <div id="lock">
                 <!-- Top bar Design -->
@@ -1231,7 +1288,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- All Settings -->
             <div name="settingsPage" class="contents hidden">
 
@@ -1792,8 +1848,28 @@
                 </div>
 
                 <li class="divider" style="background:rgba(255,255,255,0.12);"></li>
+                <div class="TitleText" name="m271"></div>
+                <div class="tile waves-effect row dropdown-button" data-activates="dropdown3">
+                    <div class="col s2">
+                        <div class="iconText"><i class="material-icons">functions</i></div>
+                    </div>
+                    <div class="col s10"><span class="PrimaryText">DPS, HPS</span><br><span class="SecondaryText" id="r_unit1"></span></div>
+                </div>
+                <div class="tile waves-effect row dropdown-button" data-activates="dropdown4">
+                    <div class="col s2">
+                        <div class="iconText"><i class="material-icons">functions</i></div>
+                    </div>
+                    <div class="col s10"><span class="PrimaryText" name="m272"></span><br><span class="SecondaryText" id="r_unit2"></span></div>
+                </div>
+                <div class="tile waves-effect row dropdown-button" data-activates="dropdown5">
+                    <div class="col s2">
+                        <div class="iconText"><i class="material-icons">functions</i></div>
+                    </div>
+                    <div class="col s10"><span class="PrimaryText">MaxHit, MaxHeal</span><br><span class="SecondaryText" id="r_unit3"></span></div>
+                </div>                                
+                
+                <li class="divider" style="background:rgba(255,255,255,0.12);"></li>
                 <div class="TitleText">MaxHit / MaxHeal</div>
-
                 <div class="tile waves-effect row" id="align" onclick="buttonCotrol(this); onSettingsUpdate(this.id);">
                     <div class="col s2">
                         <div style="color:rgba(255,255,255,0.38)"><i class="material-icons">format_align_center</i></div>
@@ -1830,6 +1906,7 @@
                         <div class="col s10"><span class="PrimaryText" name="m261"></span><br><span class="SecondaryText" name="m262"></span></div>
                     </div>
                 </div>
+
                 <li class="divider" style="background:rgba(255,255,255,0.12);"></li>
                 <div class="TitleText" name="m225"></div>
                 <div class="tile waves-effect row dropdown-button" data-activates="dropdown7">
@@ -2211,7 +2288,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <script type="text/javascript" src="js/core.js"></script>
         <script type="text/javascript" src="js/mopimopi.js"></script>
