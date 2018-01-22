@@ -444,20 +444,20 @@ function Person(e, p) {
         }
     }
     if (this.Class == "") {
-        if (this.name.indexOf("에기") > -1 || this.name.indexOf("카벙클") > -1 || this.name.toUpperCase().indexOf("EGI") > -1 || this.name.toUpperCase().indexOf("DEMI-BAHAMUT") > -1 || this.name.toUpperCase().indexOf("CARBUNCLE") > -1 || this.name.indexOf("エギ") > -1 || this.name.indexOf("カーバンクル") > -1) {
+        if (this.name.indexOf("에기") > -1 || this.name.indexOf("카벙클") > -1 || this.name.toUpperCase().indexOf("EGI") > -1 || this.name.toUpperCase().indexOf("DEMI-BAHAMUT") > -1 || this.name.toUpperCase().indexOf("CARBUNCLE") > -1 || this.name.indexOf("エギ") > -1 || this.name.indexOf("カーバンクル") > -1 || this.name.indexOf("石兽") > -1) {
             this.Job = "AVA";
             this.Class = "SMN";
             this.isPet = true;
             this.petType = "Egi"
         }
-        if (this.name.indexOf("요정") > -1 || this.name.toUpperCase().indexOf("EOS") > -1 || this.name.toUpperCase().indexOf("SELENE") > -1 || this.name.indexOf("フェアリー") > -1) {
+        if (this.name.indexOf("요정") > -1 || this.name.toUpperCase().indexOf("EOS") > -1 || this.name.toUpperCase().indexOf("SELENE") > -1 || this.name.indexOf("フェアリー") > -1 || this.name.indexOf("小仙女") > -1) {
             this.Job = "AVA";
             this.Class = "SCH";
             this.isPet = true;
             this.role = "Healer";
             this.petType = "Fairy"
         }
-        if (this.name.indexOf("자동포탑") > -1 || this.name.toUpperCase().indexOf("AUTOTURRET") > -1 || this.name.indexOf("オートタレット") > -1 || this.name.toLowerCase().indexOf("selbstschuss-gyrocopter") > -1 || this.name.toLowerCase().indexOf("auto-tourelle") > -1) {
+        if (this.name.indexOf("자동포탑") > -1 || this.name.toUpperCase().indexOf("AUTOTURRET") > -1 || this.name.indexOf("オートタレット") > -1 || this.name.toLowerCase().indexOf("selbstschuss-gyrocopter") > -1 || this.name.toLowerCase().indexOf("auto-tourelle") > -1 || this.name.indexOf("式浮空炮塔") > -1) {
             this.Job = "AVA";
             this.Class = "MCH";
             this.isPet = true;
