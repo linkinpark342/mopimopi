@@ -67,65 +67,12 @@
                 <li id="en" onclick="radioButtonCotrol(this.id)">
                     <input type="radio" class="with-gap" name="radio_lang" id="lb-en" />
                     <label for="lb-en" class="rdColor"><font style="color:#fff">English</font></label>
+                </li>                
+                <li id="de" onclick="radioButtonCotrol(this.id)">
+                    <input type="radio" class="with-gap" name="radio_lang" id="lb-de" />
+                    <label for="lb-de" class="rdColor"><font style="color:#fff">Deutsch</font></label>
                 </li>
-            </ul>
-            <!-- Unit Type 1 -->
-            <ul id="dropdown3" class="dropdown-content grey darken-3">
-                <ul class="white-text">
-                    <div class="left">DPS, HPS</div>
-                    <div class="right" style="cursor: pointer; -webkit-tap-highlight-color:transparent;"><i class="material-icons">clear</i></div>
-                </ul>
-                <li id="1r" onclick="radioButtonCotrol(this.id)">
-                    <input type="radio" class="with-gap" name="radio_unit1" id="lb-1r" />
-                    <label for="lb-1r" class="rdColor"><font style="color:#fff" name="m273"></font></label>
-                </li>
-                <li id="1k" onclick="radioButtonCotrol(this.id)">
-                    <input type="radio" class="with-gap" name="radio_unit1" id="lb-1k" />
-                    <label for="lb-1k" class="rdColor"><font style="color:#fff" name="m274"></font></label>
-                </li>
-                <li id="1m" onclick="radioButtonCotrol(this.id)">
-                    <input type="radio" class="with-gap" name="radio_unit1" id="lb-1m" />
-                    <label for="lb-1m" class="rdColor"><font style="color:#fff" name="m275"></font></label>
-                </li>
-            </ul>    
-            <!-- Unit Type 2 -->
-            <ul id="dropdown4" class="dropdown-content grey darken-3">
-                <ul class="white-text">
-                    <div class="left" name="m272"></div>
-                    <div class="right" style="cursor: pointer; -webkit-tap-highlight-color:transparent;"><i class="material-icons">clear</i></div>
-                </ul>
-                <li id="2r" onclick="radioButtonCotrol(this.id)">
-                    <input type="radio" class="with-gap" name="radio_unit2" id="lb-2r" />
-                    <label for="lb-2r" class="rdColor"><font style="color:#fff" name="m273"></font></label>
-                </li>
-                <li id="2k" onclick="radioButtonCotrol(this.id)">
-                    <input type="radio" class="with-gap" name="radio_unit2" id="lb-2k" />
-                    <label for="lb-2k" class="rdColor"><font style="color:#fff" name="m274"></font></label>
-                </li>
-                <li id="2m" onclick="radioButtonCotrol(this.id)">
-                    <input type="radio" class="with-gap" name="radio_unit2" id="lb-2m" />
-                    <label for="lb-2m" class="rdColor"><font style="color:#fff" name="m275"></font></label>
-                </li>
-            </ul> 
-            <!-- Unit Type 3 -->
-            <ul id="dropdown5" class="dropdown-content grey darken-3">
-                <ul class="white-text">
-                    <div class="left">MaxHit, MaxHeal</div>
-                    <div class="right" style="cursor: pointer; -webkit-tap-highlight-color:transparent;"><i class="material-icons">clear</i></div>
-                </ul>
-                <li id="3r" onclick="radioButtonCotrol(this.id)">
-                    <input type="radio" class="with-gap" name="radio_unit3" id="lb-3r" />
-                    <label for="lb-3r" class="rdColor"><font style="color:#fff" name="m273"></font></label>
-                </li>
-                <li id="3k" onclick="radioButtonCotrol(this.id)">
-                    <input type="radio" class="with-gap" name="radio_unit3" id="lb-3k" />
-                    <label for="lb-3k" class="rdColor"><font style="color:#fff" name="m274"></font></label>
-                </li>
-                <li id="3m" onclick="radioButtonCotrol(this.id)">
-                    <input type="radio" class="with-gap" name="radio_unit3" id="lb-3m" />
-                    <label for="lb-3m" class="rdColor"><font style="color:#fff" name="m275"></font></label>
-                </li>
-            </ul>                                 
+            </ul>                           
             <!-- Name Type -->
             <ul id="dropdown7" class="dropdown-content grey darken-3">
                 <ul class="white-text">
@@ -420,9 +367,11 @@
                     <span class="new badge green">Update</span>
                     <p class="grey1-text" lang="kr">
                         1. [G-mail/Rapis Ruri] 옵션 추가 : 중국 서버 소환수 리스트<br> 
+                        2. [Reddit/<a href="https://www.reddit.com/user/schnitzel128">schnitzel128</a>] 옵션 추가 : 독일어 번역
                     </p>
                     <p class="grey1-text" lang="en">
                         1. [G-mail/Rapis Ruri] Add an option : Pets name list in China<br>
+                        2. [Reddit/<a href="https://www.reddit.com/user/schnitzel128">schnitzel128</a>] Add an option : Translation - Deutsch<br>
                     </p>
                 </div>
                 <div class="col s12 card-panel">
@@ -435,7 +384,7 @@
                         1. A clerical error of Demi-Bahamut
                     </p>       
                 </div>
-                <span class="white-text right" id="verDate">1.1.9.5 - 2018/1/22</span>
+                <span class="white-text right" id="verDate">1.1.9.6 - 2018/1/23</span>
             </div>
             <!-- Main Contents -->
             <div name="main" id="wrap">
@@ -1846,28 +1795,7 @@
                         </div>
                     </div>
                 </div>
-
-                <li class="divider" style="background:rgba(255,255,255,0.12);"></li>
-                <div class="TitleText" name="m271"></div>
-                <div class="tile waves-effect row dropdown-button" data-activates="dropdown3">
-                    <div class="col s2">
-                        <div class="iconText"><i class="material-icons">functions</i></div>
-                    </div>
-                    <div class="col s10"><span class="PrimaryText">DPS, HPS</span><br><span class="SecondaryText" id="r_unit1"></span></div>
-                </div>
-                <div class="tile waves-effect row dropdown-button" data-activates="dropdown4">
-                    <div class="col s2">
-                        <div class="iconText"><i class="material-icons">functions</i></div>
-                    </div>
-                    <div class="col s10"><span class="PrimaryText" name="m272"></span><br><span class="SecondaryText" id="r_unit2"></span></div>
-                </div>
-                <div class="tile waves-effect row dropdown-button" data-activates="dropdown5">
-                    <div class="col s2">
-                        <div class="iconText"><i class="material-icons">functions</i></div>
-                    </div>
-                    <div class="col s10"><span class="PrimaryText">MaxHit, MaxHeal</span><br><span class="SecondaryText" id="r_unit3"></span></div>
-                </div>                                
-                
+            
                 <li class="divider" style="background:rgba(255,255,255,0.12);"></li>
                 <div class="TitleText">MaxHit / MaxHeal</div>
                 <div class="tile waves-effect row" id="align" onclick="buttonCotrol(this); onSettingsUpdate(this.id);">
@@ -2120,7 +2048,16 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="tile" style="cursor: default">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="input-field">
+                                <input id="deFont" placeholder="" type="text" name="deFont" autocomplete="off" autocapitalize="off" autocorrect="off">
+                                <label for="deFont" name="m105" class="active"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- Cell Width -->
             <div name="cellWidth" class="contents hidden">
@@ -2235,6 +2172,12 @@
                         <div class="iconText"><i class="material-icons">person</i></div>
                     </div>
                     <div class="col s10"><span class="PrimaryText" name="m156"></span><br><span class="SecondaryText" name="m157"></span></div>
+                </div>
+                <div class="tile row" style="cursor: default">
+                    <div class="col s2">
+                        <div class="iconText"><i class="material-icons">person</i></div>
+                    </div>
+                    <div class="col s10"><span class="PrimaryText" name="m271"></span><br><span class="SecondaryText" name="m272"></span></div>
                 </div>
                 <li class="divider" style="background:rgba(255,255,255,0.12);"></li>
                 <div class="TitleText" name="m158"></div>
